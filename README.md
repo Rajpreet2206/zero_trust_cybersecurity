@@ -6,6 +6,8 @@ Zero trust wrapper for Strands Agents SDK aims to extend it with a security-firs
 
 
 ## Project Goals
+#### **</ NOT CHANGING THE DESIGN PATTERNS IN STRANDS AGENTS SDK>**
+
 ### 1. Enable Secure Multi-Agent Collaboration
 Ensure that agents can collaborate and share intelligence safely in distributed environments without implicit trust.  This allows the deployment of AI-driven agents in sensitive domains like industrial OT, cyber defense, or smart factories.
 
