@@ -146,14 +146,12 @@ def teacher_assistant_route(query):
     return call_agent(agent_name, payload)
 
 if __name__ == "__main__":
-    print("=== Multi-Agent Zero Trust Demo ===\n")
+    print("*** Multi-Agent Zero Trust Demo Run ***\n")
 
     # Use ThreadPoolExecutor to simulate concurrent multi-agent calls
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = [executor.submit(teacher_assistant_route, q) for q in QUERIES]
         for future in futures:
             print(future.result())
-
-    print("\n=== Demo Complete ===")
 
 ```
