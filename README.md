@@ -41,3 +41,119 @@ A Golang extension interface that wraps Strands SDK APIs with security hooks. Th
 ### 6. Modular Deployment Architecture
 The system should support flexible deployment patterns, like run as a sidecar service (, e.g. within a Kubernetes Pod) or as a middleware in the agent code. We should provide configurable security levels ( like dev mode vs. prod zero trust enforcement). 
 
+## End-Use Vision
+#### Reference Example : *https://strandsagents.com/latest/documentation/docs/examples/python/multi_agent_example/multi_agent_example/*
+```python
+# The client side Agent code which makes a call and is intercepted by the wrapper.
+import requests
+import json
+
+# Paths to client certificate and key for mTLS
+CLIENT_CERT = "certs/client.crt"
+CLIENT_KEY = "certs/client.key"
+CA_CERT = "certs/ca.crt"
+
+# Zero Trust Wrapper endpoint
+ZT_WRAPPER_URL = "https://localhost:8443/call-agent"
+
+def call_agent(agent_name: str, payload: str):
+    """
+    Call a Strands SDK agent via the Zero Trust Wrapper with mTLS and OPA enforcement
+    """
+    params = {
+        "agent": agent_name,
+        "payload": payload
+    }
+
+    try:
+        response = requests.get(
+            ZT_WRAPPER_URL,
+            params=params,
+            cert=(CLIENT_CERT, CLIENT_KEY),
+            verify=CA_CERT
+        )
+        response.raise_for_status()
+        return response.text
+    except requests.exceptions.RequestException as e:
+        return f"Request failed: {e}"
+
+if __name__ == "__main__":
+    # Example 1: Math query
+    result = call_agent("MathAssistant", "Solve x^2 + 5x + 6 = 0")
+    print("MathAssistant Response:\n", result)
+
+    # Example 2: Computer Science query
+    result = call_agent("CSAssistant", "Write a Python function to check if a string is palindrome")
+    print("CSAssistant Response:\n", result)
+
+```
+
+
+```python
+# Application of Zero Trusy Wrapper to Multi-Agents Systems
+import requests
+from concurrent.futures import ThreadPoolExecutor
+
+# Paths to client certificate and key for mTLS
+CLIENT_CERT = "certs/client.crt"
+CLIENT_KEY = "certs/client.key"
+CA_CERT = "certs/ca.crt"
+
+# Zero Trust Wrapper endpoint
+ZT_WRAPPER_URL = "https://localhost:8443/call-agent"
+
+# Define specialized agents
+SPECIALIZED_AGENTS = {
+    "math": "MathAssistant",
+    "cs": "CSAssistant",
+    "language": "LanguageAssistant",
+    "english": "EnglishAssistant",
+}
+
+# Sample queries routed by Teacher's Assistant
+QUERIES = [
+    {"type": "math", "payload": "Solve x^2 + 5x + 6 = 0"},
+    {"type": "cs", "payload": "Write a Python function to check palindrome"},
+    {"type": "language", "payload": "Translate 'Hello, how are you?' to Spanish"},
+    {"type": "english", "payload": "Check grammar: 'She go to school yesterday'"}
+]
+
+def call_agent(agent_name: str, payload: str) -> str:
+    """
+    Call a specialized agent via the Go Zero Trust Wrapper
+    """
+    params = {"agent": agent_name, "payload": payload}
+    try:
+        response = requests.get(
+            ZT_WRAPPER_URL,
+            params=params,
+            cert=(CLIENT_CERT, CLIENT_KEY),
+            verify=CA_CERT,
+            timeout=5
+        )
+        response.raise_for_status()
+        return f"[{agent_name}] {response.text}"
+    except requests.exceptions.RequestException as e:
+        return f"[{agent_name}] Request failed: {e}"
+
+def teacher_assistant_route(query):
+    """
+    Simulates Teacher's Assistant routing queries to specialized agents
+    """
+    agent_type = query["type"]
+    payload = query["payload"]
+    agent_name = SPECIALIZED_AGENTS.get(agent_type, "GeneralAssistant")
+    return call_agent(agent_name, payload)
+
+if __name__ == "__main__":
+    print("=== Multi-Agent Zero Trust Demo ===\n")
+
+    # Use ThreadPoolExecutor to simulate concurrent multi-agent calls
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = [executor.submit(teacher_assistant_route, q) for q in QUERIES]
+        for future in futures:
+            print(future.result())
+
+    print("\n=== Demo Complete ===")
+
+```
