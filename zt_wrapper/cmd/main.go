@@ -2,6 +2,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
@@ -21,6 +22,9 @@ type ZTWrapper struct {
 
 // SecureCall verifies policy, logs request, and calls the agent
 func (z *ZTWrapper) SecureCall(agentName, payload string, context map[string]interface{}) (string, error) {
+	// Log the input context for debugging
+	z.Logger.Info("OPA input context", zap.Any("context", context))
+
 	// Evaluate OPA policy
 	allowed, err := z.Policy.Evaluate(context)
 	if err != nil {
@@ -28,8 +32,10 @@ func (z *ZTWrapper) SecureCall(agentName, payload string, context map[string]int
 		return "", err
 	}
 
+	z.Logger.Info("OPA evaluation result", zap.Bool("allowed", allowed))
+
 	if !allowed {
-		z.Logger.Warn("Access denied by policy", zap.String("agent", agentName))
+		z.Logger.Warn("Access denied by policy", zap.String("agent", agentName), zap.Any("context", context))
 		return "", fmt.Errorf("access denied by policy")
 	}
 
@@ -37,6 +43,7 @@ func (z *ZTWrapper) SecureCall(agentName, payload string, context map[string]int
 	z.Logger.Info("Agent call allowed",
 		zap.String("agent", agentName),
 		zap.String("payload", payload),
+		zap.Any("context", context),
 	)
 
 	// TODO: Replace with actual Strands SDK call
@@ -46,17 +53,30 @@ func (z *ZTWrapper) SecureCall(agentName, payload string, context map[string]int
 
 // HTTP handler for incoming agent requests
 func (z *ZTWrapper) handler(w http.ResponseWriter, r *http.Request) {
-	agent := r.URL.Query().Get("agent")
-	payload := r.URL.Query().Get("payload")
+	if r.Method != http.MethodPost {
+		http.Error(w, "Only POST requests allowed", http.StatusMethodNotAllowed)
+		return
+	}
+
+	// Decode JSON body
+	var data map[string]string
+	if err := json.NewDecoder(r.Body).Decode(&data); err != nil {
+		http.Error(w, "Invalid JSON body", http.StatusBadRequest)
+		return
+	}
+	agent := data["agent"]
+	payload := data["payload"]
+
+	z.Logger.Info("Received request", zap.String("agent", agent), zap.String("payload", payload))
+
 	context := map[string]interface{}{
-		"input": map[string]interface{}{
-			"source":  agent,
-			"payload": payload,
-		},
+		"agent":   agent,
+		"payload": payload,
 	}
 
 	resp, err := z.SecureCall(agent, payload, context)
 	if err != nil {
+		z.Logger.Warn("Request denied", zap.Error(err), zap.Any("context", context))
 		http.Error(w, err.Error(), http.StatusForbidden)
 		return
 	}
@@ -72,7 +92,7 @@ func main() {
 	}
 
 	// Load OPA policy
-	policy, err := opa.LoadPolicy([]string{"opa/policies/agents.rego"})
+	policy, err := opa.LoadPolicy([]string{"../../opa/policies/agents.rego"})
 	if err != nil {
 		logger.Fatal("Failed to load OPA policy", zap.Error(err))
 	}
@@ -84,14 +104,16 @@ func main() {
 	}
 
 	// Setup mTLS server
-	tlsConfig, err := mtls.LoadMTLSServerConfig("certs/server.crt", "certs/server.key", "certs/ca.crt")
+	tlsConfig, err := mtls.LoadMTLSServerConfig("../certs/server.crt", "../certs/server.key", "../certs/ca.crt")
 	if err != nil {
 		logger.Fatal("Failed to setup mTLS", zap.Error(err))
 	}
 
+	// Register /secure endpoint
+	http.HandleFunc("/secure", wrapper.handler)
+
 	server := &http.Server{
 		Addr:      ":8443",
-		Handler:   http.HandlerFunc(wrapper.handler),
 		TLSConfig: tlsConfig,
 	}
 
