@@ -1,0 +1,19 @@
+# Binaries
+/bin/
+/build/
+/dist/
+
+# Go modules
+vendor/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets (never commit real keys)
+*.pem
+*.key

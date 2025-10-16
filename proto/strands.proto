@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package strands;
+
+service SecureChannel {
+  rpc SendMessage (MessageRequest) returns (MessageResponse);
+}
+
+message MessageRequest {
+  string text = 1;
+}
+
+message MessageResponse {
+  string reply = 1;
+}

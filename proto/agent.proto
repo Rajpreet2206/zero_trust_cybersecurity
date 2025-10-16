@@ -1,0 +1,55 @@
+option go_package = "github.com/Rajpreet2206/zero_trust_cybersecurity/proto;proto";
+
+syntax = "proto3";
+
+package strands.agent;
+option go_package = "github.com/rajpreet/strands-zt-wrapper/proto;proto";
+
+import "google/protobuf/timestamp.proto";
+
+// Agent service for control plane communications between
+// the Go Zero-Trust wrapper (server) and Python Strands agent (client).
+service AgentService {
+  // Application-level handshake after TLS mTLS is established.
+  rpc Authenticate (AuthRequest) returns (AuthResponse);
+
+  // Simple heartbeat from agent -> server (server may stream back commands later).
+  rpc Heartbeat (HeartbeatRequest) returns (HeartbeatResponse);
+
+  // Execute a command (example RPC; replace with actual agent ops).
+  rpc Execute (ExecuteRequest) returns (ExecuteResponse);
+}
+
+message AuthRequest {
+  string agent_id = 1;           // agent logical identifier
+  bytes signature = 2;          // signature over server challenge (optional)
+  bytes cert_chain = 3;         // optional raw cert chain (if agent wants to send)
+}
+
+message AuthResponse {
+  bool success = 1;
+  string message = 2;
+  bytes server_challenge = 3;   // server nonce (if challenge-response)
+}
+
+message HeartbeatRequest {
+  string agent_id = 1;
+  google.protobuf.Timestamp ts = 2;
+  map<string,string> metrics = 3;
+}
+
+message HeartbeatResponse {
+  bool ok = 1;
+  string message = 2;
+}
+
+message ExecuteRequest {
+  string agent_id = 1;
+  string command = 2;
+  bytes payload = 3;
+}
+
+message ExecuteResponse {
+  bool success = 1;
+  string output = 2;
+}
