@@ -20,7 +20,7 @@ class AgentCredentials:
 class StrandsAgentClient:
     """Client for agents to communicate through Go wrapper"""
 
-    def __init__(self, agent_id: str, wrapper_url: str = "http://localhost:8443"):
+    def __init__(self, agent_id: str, wrapper_url: str = "http://localhost:8080"):
         self.agent_id = agent_id
         self.wrapper_url = wrapper_url.rstrip("/")
         self.credentials: Optional[AgentCredentials] = None
@@ -33,7 +33,7 @@ class StrandsAgentClient:
         endpoint = f"{self.wrapper_url}/api/v1/identity/register"
         payload = {"agent_id": self.agent_id}
         
-        response = self.session.post(endpoint, json=payload, timeout=10)
+        response = self.session.post(endpoint, json=payload, timeout=30)
         response.raise_for_status()
         
         data = response.json()
@@ -93,7 +93,7 @@ class StrandsAgentClient:
                 endpoint,
                 json=payload,
                 headers={"X-Agent-ID": self.agent_id},
-                timeout=10
+                timeout=30
             )
             response.raise_for_status()
             print(f"[{self.agent_id}] ✓ Verified successfully")
@@ -117,7 +117,7 @@ class StrandsAgentClient:
                 endpoint,
                 json=payload,
                 headers={"X-Agent-ID": self.agent_id},
-                timeout=10
+                timeout=60
             )
             response.raise_for_status()
             print(f"[{self.agent_id}] ✓ Role assigned")
@@ -136,7 +136,7 @@ class StrandsAgentClient:
                 endpoint,
                 json=payload,
                 headers={"X-Agent-ID": self.agent_id},
-                timeout=10
+                timeout=60
             )
             response.raise_for_status()
             result = response.json()
@@ -158,7 +158,7 @@ class StrandsAgentClient:
             response = self.session.get(
                 endpoint,
                 headers={"X-Agent-ID": self.agent_id},
-                timeout=10
+                    timeout=60
             )
             response.raise_for_status()
             return response.json()
@@ -174,7 +174,7 @@ class StrandsAgentClient:
             response = self.session.get(
                 endpoint,
                 headers={"X-Agent-ID": self.agent_id},
-                timeout=10
+                    timeout=60
             )
             response.raise_for_status()
             data = response.json()

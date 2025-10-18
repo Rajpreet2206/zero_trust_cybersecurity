@@ -5,6 +5,7 @@ Mock SDK that uses real Strands Agent with Bedrock (secure credentials)
 from flask import Flask, request, jsonify
 import os
 import sys
+import json
 
 # Import Strands and Bedrock
 try:
@@ -43,29 +44,47 @@ except Exception as e:
     AGENT_READY = False
     agent = None
 
+# Add health check endpoint
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "healthy"})
+
 @app.route('/execute', methods=['POST'])
 def execute():
     """Execute with real Strands agent or fallback"""
     try:
         data = request.json
-        task = data.get('task', {})
-        question = task.get('question', 'Hello')
-        
-        if AGENT_READY and agent:
-            # Use real Bedrock agent
-            response = agent(question)
-        else:
-            # Fallback mock response
-            response = f"Mock response to: {question}"
-        
-        result = {
-            "status": "success",
-            "agent": "bedrock-nova" if AGENT_READY else "mock-agent",
-            "question": question,
-            "response": response,
-        }
-        
-        return jsonify(result), 200
+        # Accept both {"question": "..."} and {"task": {"question": "..."}} formats
+        question = data.get('question')
+        if not question and 'task' in data:
+            question = data['task'].get('question')
+        if not question:
+            question = "Hello"
+
+        if not AGENT_READY:
+            # Fallback mock responses
+            mock_responses = {
+                "What is agentic AI?": "Agentic AI refers to artificial intelligence systems that can act autonomously to achieve specific goals. These systems can make decisions, take actions, and adapt their behavior based on their environment and objectives.",
+                "Explain zero-trust security": "Zero-trust security is a cybersecurity framework that requires all users and systems, whether inside or outside the network, to be authenticated, authorized, and validated before gaining access to applications and data. It operates on the principle of 'never trust, always verify'.",
+                "How do autonomous agents work?": "Autonomous agents are software systems that can operate independently to achieve goals. They use sensors to perceive their environment, decision-making algorithms to determine actions, and actuators to execute those actions. They often employ AI and machine learning to improve their performance over time."
+            }
+            response = mock_responses.get(question, "I don't have specific information about that topic.")
+            return jsonify({"response": response}), 200
+
+        # If AGENT_READY and agent is set, use the real agent
+        try:
+            raw = agent(question) if agent else f"Mock response to: {question}"
+            # Safely serialize any kind of object to JSON string using default=str
+            try:
+                response_text = json.dumps(raw, default=str)
+            except Exception:
+                response_text = str(raw)
+            return jsonify({"response": response_text}), 200
+        except Exception as e:
+            # Print full traceback to the server console for debugging
+            import traceback
+            traceback.print_exc()
+            return jsonify({"status": "error", "message": str(e)}), 500
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 

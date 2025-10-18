@@ -19,7 +19,7 @@ type Bridge struct {
 // NewBridge creates a new Python SDK bridge
 func NewBridge(endpoint string, timeoutSeconds int) *Bridge {
 	if timeoutSeconds == 0 {
-		timeoutSeconds = 30
+		timeoutSeconds = 60
 	}
 
 	return &Bridge{

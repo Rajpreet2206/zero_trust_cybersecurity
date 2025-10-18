@@ -51,10 +51,10 @@ class WrappedStrandsAgent:
         # Verify - with longer timeout
         try:
             logger.info(f"[{self.agent_name}] Verifying identity...")
-            # Increase timeout for verify endpoint
-            self.wrapper_client.session.timeout = 60
+            # Verify identity with wrapper
+            verify_result = self.wrapper_client.verify_with_wrapper()
             
-            if self.wrapper_client.verify_with_wrapper():
+            if verify_result:
                 self.authenticated = True
                 logger.info(f"[{self.agent_name}] ✓ Setup complete\n")
                 return True
@@ -76,10 +76,8 @@ class WrappedStrandsAgent:
         try:
             # Execute task and get actual response
             result = self.wrapper_client.execute_task({
-                "action": "agent_query",
                 "question": question
             })
-            
             # Extract the actual response from the mock SDK
             response = result.get("response", "No response received")
             logger.info(f"[{self.agent_name}] ✓ Query executed\n")

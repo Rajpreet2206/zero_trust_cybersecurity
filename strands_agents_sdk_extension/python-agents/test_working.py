@@ -19,7 +19,7 @@ try:
     response = requests.post(
         f"{wrapper_url}/api/v1/identity/register",
         json={"agent_id": "working-agent"},
-        timeout=10
+        timeout=30
     )
     response.raise_for_status()
     creds = response.json()

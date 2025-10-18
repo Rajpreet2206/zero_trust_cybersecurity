@@ -51,7 +51,7 @@ func main() {
 	if pythonEndpoint == "" {
 		pythonEndpoint = "http://localhost:5000"
 	}
-	pythonBridge = sdk.NewBridge(pythonEndpoint, 30)
+	pythonBridge = sdk.NewBridge(pythonEndpoint, 60)
 	fmt.Println("✓ Python SDK bridge initialized")
 
 	// HTTP endpoints - PUBLIC (no auth required)
@@ -351,7 +351,14 @@ func handleExecuteAgent(w http.ResponseWriter, r *http.Request) {
 	}
 
 	body, _ := io.ReadAll(r.Body)
-	json.Unmarshal(body, &req)
+	// fmt.Printf("Raw request body: %s\n", string(body))
+	err := json.Unmarshal(body, &req)
+	// fmt.Printf("Parsed req.Task: %#v\n", req.Task)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(map[string]string{"error": "invalid JSON"})
+		return
+	}
 
 	if req.Task == nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -359,9 +366,18 @@ func handleExecuteAgent(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	question, ok := req.Task["question"].(string)
+	if !ok || question == "" {
+		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(map[string]string{"error": "question required in task"})
+		return
+	}
+
 	agentID := middleware.GetAgentFromRequest(r)
-	result, err := pythonBridge.ExecuteAgent(agentID, req.Task)
+	result, err := pythonBridge.ExecuteAgent(agentID, map[string]interface{}{"question": question})
 	if err != nil {
+		// Log detailed error to server stdout to help debugging
+		fmt.Printf("Python bridge ExecuteAgent error for agent %s: %v\n", agentID, err)
 		w.WriteHeader(http.StatusInternalServerError)
 		json.NewEncoder(w).Encode(map[string]string{"error": err.Error()})
 		return
