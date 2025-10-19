@@ -1,0 +1,111 @@
+networks:
+  ics-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+
+volumes:
+  wrapper_db:
+
+services:
+  # --- OpenPLC (x86-compatible) ---
+  openplc:
+    image: tuttas/openplc_v3:latest
+    container_name: warehouse-openplc
+    networks:
+      ics-network:
+        ipv4_address: 172.20.0.10
+    ports:
+      - "502:502/tcp"      # Modbus TCP
+      - "8080:8080/tcp"    # Web UI
+    environment:
+      TZ: "UTC"
+    healthcheck:
+      test: ["CMD-SHELL", "ps aux | grep -i openplc | grep -v grep > /dev/null"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+
+  # --- ScadaBR (or equivalent SCADA dashboard) ---
+  scadabr:
+    image: bitelxux/scadabr:latest
+    container_name: warehouse-scadabr
+    networks:
+      ics-network:
+        ipv4_address: 172.20.0.20
+    ports:
+      - "8180:8080/tcp"    # Web UI
+    environment:
+      TZ: "UTC"
+    depends_on:
+      - openplc
+      - firewall
+    healthcheck:
+      test: ["CMD-SHELL", "wget --quiet --tries=1 --spider http://localhost:8080/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 45s
+    restart: unless-stopped
+
+  # --- Linux-based firewall ---
+  firewall:
+    image: ubuntu:22.04
+    container_name: warehouse-firewall
+    networks:
+      ics-network:
+        ipv4_address: 172.20.0.30
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    command: >
+      bash -c "
+        apt-get update && apt-get install -y iptables iproute2 curl &&
+        echo 'Enabling IP forwarding...' &&
+        sysctl -w net.ipv4.ip_forward=1 &&
+        iptables -P FORWARD DROP &&
+        iptables -A FORWARD -s 172.20.0.0/24 -d 0.0.0.0/0 -j ACCEPT &&
+        iptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT &&
+        echo 'Firewall rules loaded. Container ready.' &&
+        tail -f /dev/null
+      "
+    restart: unless-stopped
+
+  # --- Go Wrapper (Zero-trust gateway) ---
+  go-wrapper:
+    build:
+      context: ../strands_agents_sdk_extension
+      dockerfile: Dockerfile
+    container_name: warehouse-go-wrapper
+    networks:
+      ics-network:
+        ipv4_address: 172.20.0.40
+    ports:
+      - "8443:8443/tcp"    # Secure API
+      - "9090:9090/tcp"    # Health check
+    environment:
+      WRAPPER_PORT: "8443"
+      OPENPLA_HOST: "openplc"
+      OPENPLA_PORT: "502"
+      SCADABR_HOST: "scadabr"
+      SCADABR_PORT: "8080"
+      DB_PATH: "/data/wrapper-db.sqlite"
+      AUDIT_LOG: "/logs/audit.log"
+      TZ: "UTC"
+    volumes:
+      - ./certs:/certs:ro
+      - wrapper_db:/data
+      - ./logs:/logs
+    depends_on:
+      - openplc
+      - scadabr
+    healthcheck:
+      test: ["CMD", "curl", "-f", "-k", "https://localhost:8443/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped

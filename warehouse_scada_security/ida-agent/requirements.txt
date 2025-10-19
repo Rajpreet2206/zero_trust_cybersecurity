@@ -1,0 +1,5 @@
+requests
+cryptography
+pyyaml
+python-dotenv
+boto3

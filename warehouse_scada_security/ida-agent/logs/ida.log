@@ -1,0 +1,555 @@
+2025-10-19 13:46:36,576 - IDA - INFO - ======================================================================
+2025-10-19 13:46:36,576 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 13:46:36,576 - IDA - INFO - ======================================================================
+2025-10-19 13:46:36,576 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 13:46:36,576 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 13:46:36,623 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 13:46:36,637 - IDA - ERROR - Registration failed: 404 Client Error: Not Found for url: http://localhost:8443/register
+2025-10-19 14:33:54,983 - IDA - INFO - ======================================================================
+2025-10-19 14:33:54,983 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:33:54,983 - IDA - INFO - ======================================================================
+2025-10-19 14:33:54,984 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:33:54,984 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:33:55,019 - IDA - INFO - Keypair generated
+2025-10-19 14:33:55,019 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:33:55,044 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': 'eb656999e0a7fccbc34967311ffd9cdc4521ddbb9f599d88b6a498baa6ca9ced', 'private_key': '18695d47df97c7ac952b72e1ecb7f664a687c572952a307a861b3814da9e7d0feb656999e0a7fccbc34967311ffd9cdc4521ddbb9f599d88b6a498baa6ca9ced', 'nonce': '687b557e9d31557b1631c0f15dde55d9', 'created_at': 1760884435, 'expires_at': 1760888035, 'status': 'active'}
+2025-10-19 14:33:55,552 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 14:33:55,570 - IDA - ERROR - Role assignment failed: 400 Client Error: Bad Request for url: http://localhost:8443/api/v1/policy/assign-role
+2025-10-19 14:35:17,736 - IDA - INFO - ======================================================================
+2025-10-19 14:35:17,736 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:35:17,736 - IDA - INFO - ======================================================================
+2025-10-19 14:35:17,736 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:35:17,737 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:35:17,770 - IDA - INFO - Keypair generated
+2025-10-19 14:35:17,771 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:35:17,774 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 14:42:02,351 - IDA - INFO - ======================================================================
+2025-10-19 14:42:02,351 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:42:02,351 - IDA - INFO - ======================================================================
+2025-10-19 14:42:02,351 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:42:02,352 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:42:02,389 - IDA - INFO - Keypair generated
+2025-10-19 14:42:02,390 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:42:02,405 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 14:42:30,723 - IDA - INFO - ======================================================================
+2025-10-19 14:42:30,723 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:42:30,723 - IDA - INFO - ======================================================================
+2025-10-19 14:42:30,723 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:42:30,723 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:42:30,753 - IDA - INFO - Keypair generated
+2025-10-19 14:42:30,754 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:42:30,780 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 14:45:15,642 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:45:15,642 - IDA - INFO - ======================================================================
+2025-10-19 14:45:15,643 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:45:15,643 - IDA - INFO - ======================================================================
+2025-10-19 14:45:15,643 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:45:15,644 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:45:15,673 - IDA - INFO - Keypair generated
+2025-10-19 14:45:15,673 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:45:15,696 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 14:46:00,240 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:46:00,241 - IDA - INFO - ======================================================================
+2025-10-19 14:46:00,241 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:46:00,241 - IDA - INFO - ======================================================================
+2025-10-19 14:46:00,241 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:46:00,242 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:46:00,273 - IDA - INFO - Keypair generated
+2025-10-19 14:46:00,273 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:46:00,291 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': '949f0aca52b9dc2a88252c0bbed08ca0db69ac35ba4e9230563801eb3247bf34', 'private_key': 'f76a380a6d006fde32c8b3b7602b30e4d4a5fbffce635106957985a8c402b022949f0aca52b9dc2a88252c0bbed08ca0db69ac35ba4e9230563801eb3247bf34', 'nonce': 'a60bbeabcec0c29b361d89de1988eee9', 'created_at': 1760885160, 'expires_at': 1760888760, 'status': 'active'}
+2025-10-19 14:46:00,800 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 14:46:00,804 - IDA - ERROR - Role assignment failed: 400 Client Error: Bad Request for url: http://localhost:8443/api/v1/policy/assign-role
+2025-10-19 14:51:14,456 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:51:14,456 - IDA - INFO - ======================================================================
+2025-10-19 14:51:14,456 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:51:14,456 - IDA - INFO - ======================================================================
+2025-10-19 14:51:14,456 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:51:14,457 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:51:14,492 - IDA - INFO - Keypair generated
+2025-10-19 14:51:14,492 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:51:14,518 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': '55a9d7069b7d8935d3360edc1ef14324a45b3a0d320e9f2f28578c923bf50daa', 'private_key': 'bbd4d13e47cfe6e847c1623377b36e8e5a640ec3d6868d68809a74c05d72021955a9d7069b7d8935d3360edc1ef14324a45b3a0d320e9f2f28578c923bf50daa', 'nonce': '110369a0a15b41ac0710a11278f28314', 'created_at': 1760885474, 'expires_at': 1760889074, 'status': 'active'}
+2025-10-19 14:51:15,024 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 14:51:15,040 - IDA - INFO - Role assigned: {'status': 'role assigned'}
+2025-10-19 14:51:15,553 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 14:51:15,570 - IDA - ERROR - Verification failed: 401 Client Error: Unauthorized for url: http://localhost:8443/api/v1/identity/verify
+2025-10-19 14:53:19,011 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:53:19,011 - IDA - INFO - ======================================================================
+2025-10-19 14:53:19,012 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:53:19,012 - IDA - INFO - ======================================================================
+2025-10-19 14:53:19,012 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:53:19,013 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:53:19,054 - IDA - INFO - Keypair generated
+2025-10-19 14:53:19,054 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:53:19,074 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': 'd04d8968cca797f3557b7819f76d794f4c052c8997d3f733a43637f3308922b4', 'private_key': 'd8b7323d994fecf4733eb815034b0917e18f97cf66d2e7b1689fb65fcc474964d04d8968cca797f3557b7819f76d794f4c052c8997d3f733a43637f3308922b4', 'nonce': '10e2dd56373753bf381dc73e53ce9474', 'created_at': 1760885599, 'expires_at': 1760889199, 'status': 'active'}
+2025-10-19 14:53:19,581 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 14:53:19,597 - IDA - INFO - Role assigned: {'status': 'role assigned'}
+2025-10-19 14:53:20,108 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 14:53:20,125 - IDA - ERROR - Verification failed: 401 Client Error: Unauthorized for url: http://localhost:8443/api/v1/identity/verify
+2025-10-19 14:54:26,299 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:54:26,301 - IDA - INFO - ======================================================================
+2025-10-19 14:54:26,301 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:54:26,301 - IDA - INFO - ======================================================================
+2025-10-19 14:54:26,302 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:54:26,302 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:54:26,339 - IDA - INFO - Keypair generated
+2025-10-19 14:54:26,340 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:54:26,366 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 14:54:35,371 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:54:35,372 - IDA - INFO - ======================================================================
+2025-10-19 14:54:35,372 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:54:35,372 - IDA - INFO - ======================================================================
+2025-10-19 14:54:35,372 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:54:35,374 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:54:35,409 - IDA - INFO - Keypair generated
+2025-10-19 14:54:35,409 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:54:35,414 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': 'd5ca773ebf385072ab83b447df4ac4b351376d7d177df506de3a7d6a76b385c2', 'private_key': '7b708306a32a6dfd9ea643feab91c6bb9b1c38ac8a8c885e05447bfe8cec7d2bd5ca773ebf385072ab83b447df4ac4b351376d7d177df506de3a7d6a76b385c2', 'nonce': 'b6424074d890002e2102d8fb8cf39253', 'created_at': 1760885675, 'expires_at': 1760889275, 'status': 'active'}
+2025-10-19 14:54:35,926 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 14:54:35,942 - IDA - INFO - Role assigned: {'status': 'role assigned'}
+2025-10-19 14:54:36,450 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 14:54:36,471 - IDA - ERROR - Verification failed: 401 Client Error: Unauthorized for url: http://localhost:8443/api/v1/identity/verify
+2025-10-19 14:57:13,209 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:57:13,210 - IDA - INFO - ======================================================================
+2025-10-19 14:57:13,210 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:57:13,210 - IDA - INFO - ======================================================================
+2025-10-19 14:57:13,210 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:57:13,211 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:57:13,242 - IDA - INFO - Keypair generated
+2025-10-19 14:57:13,242 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:57:13,256 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 14:57:24,075 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:57:24,076 - IDA - INFO - ======================================================================
+2025-10-19 14:57:24,076 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:57:24,076 - IDA - INFO - ======================================================================
+2025-10-19 14:57:24,076 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:57:24,076 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:57:24,113 - IDA - INFO - Keypair generated
+2025-10-19 14:57:24,113 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:57:24,138 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': '5ae9b0c06225094cab48e3c7bed005c5bc4e06f9796a647d282b81508aa3ca2a', 'private_key': '564cb879b5dd983b7e5cfb388507ceb323e0da9d5ddbbeda9f72c31a962edcad5ae9b0c06225094cab48e3c7bed005c5bc4e06f9796a647d282b81508aa3ca2a', 'nonce': '9c18246a0413fad952b56768ec1a9e62', 'created_at': 1760885844, 'expires_at': 1760889444, 'status': 'active'}
+2025-10-19 14:57:24,646 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 14:57:24,663 - IDA - INFO - Role assigned: {'status': 'role assigned'}
+2025-10-19 14:57:25,174 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 14:57:25,174 - IDA - ERROR - Verification failed: name 'register_response' is not defined
+2025-10-19 14:59:46,434 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 14:59:46,434 - IDA - INFO - ======================================================================
+2025-10-19 14:59:46,435 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 14:59:46,435 - IDA - INFO - ======================================================================
+2025-10-19 14:59:46,436 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 14:59:46,436 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 14:59:46,492 - IDA - INFO - Keypair generated
+2025-10-19 14:59:46,493 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 14:59:46,499 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': 'f3a74d7f8d97b94dfaaaa187d10b7279759dfe7228b8ac5e40362746120ffa01', 'private_key': '63d7578e25797ed0b7f7cfb62ef36670accff89b4d45ab5497e879bde8a90aecf3a74d7f8d97b94dfaaaa187d10b7279759dfe7228b8ac5e40362746120ffa01', 'nonce': 'f596d72acd267459729387cc63741bdf', 'created_at': 1760885986, 'expires_at': 1760889586, 'status': 'active'}
+2025-10-19 14:59:47,004 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 14:59:47,020 - IDA - ERROR - Role assignment failed: 400 Client Error: Bad Request for url: http://localhost:8443/api/v1/policy/assign-role
+2025-10-19 15:00:38,682 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:00:38,682 - IDA - INFO - ======================================================================
+2025-10-19 15:00:38,683 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:00:38,684 - IDA - INFO - ======================================================================
+2025-10-19 15:00:38,684 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:00:38,684 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 15:00:38,716 - IDA - INFO - Keypair generated
+2025-10-19 15:00:38,717 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:00:38,745 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': '6c82a66463fad229cc0963e7979492df4e0dc8d49f9115b963ceb634d566ab4b', 'private_key': 'b12dcac1c1ce6d58cc4710ab680070fe4f77649af099f01e84d2ecbd2b38a29a6c82a66463fad229cc0963e7979492df4e0dc8d49f9115b963ceb634d566ab4b', 'nonce': 'cede710ab2d04818a2359f9104ca914b', 'created_at': 1760886038, 'expires_at': 1760889638, 'status': 'active'}
+2025-10-19 15:00:39,252 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 15:00:39,269 - IDA - INFO - Role assigned: {'status': 'role assigned'}
+2025-10-19 15:00:39,774 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:00:39,791 - IDA - ERROR - Verification failed: 401 Client Error: Unauthorized for url: http://localhost:8443/api/v1/identity/verify
+2025-10-19 15:03:08,604 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:03:08,604 - IDA - INFO - ======================================================================
+2025-10-19 15:03:08,605 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:03:08,605 - IDA - INFO - ======================================================================
+2025-10-19 15:03:08,606 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:03:08,606 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 15:03:08,638 - IDA - INFO - Keypair generated
+2025-10-19 15:03:08,639 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:03:08,653 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 15:03:19,875 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:03:19,875 - IDA - INFO - ======================================================================
+2025-10-19 15:03:19,876 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:03:19,876 - IDA - INFO - ======================================================================
+2025-10-19 15:03:19,876 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:03:19,877 - IDA - INFO - Generating Ed25519 keypair...
+2025-10-19 15:03:19,907 - IDA - INFO - Keypair generated
+2025-10-19 15:03:19,908 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:03:19,936 - IDA - INFO - Registered with Go Wrapper: {'agent_id': 'intrusion-detection-agent-001', 'public_key': '740349e3a58264169c4637bf8f7b6fee96cfaca2b103ace9f9690ee0d51b3ff1', 'private_key': '63b7a5a2b58f27cef44797cb451ce6044a45971b1b5890be6422b899ff97bcf1740349e3a58264169c4637bf8f7b6fee96cfaca2b103ace9f9690ee0d51b3ff1', 'nonce': '67e149cc10f2f2c70bb5ce8e6f84e178', 'created_at': 1760886199, 'expires_at': 1760889799, 'status': 'active'}
+2025-10-19 15:03:20,450 - IDA - INFO - Assigning role 'security_monitor' to IDA...
+2025-10-19 15:03:20,466 - IDA - INFO - Role assigned: {'status': 'role assigned'}
+2025-10-19 15:03:20,981 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:03:20,997 - IDA - ERROR - Verification failed: 401 Client Error: Unauthorized for url: http://localhost:8443/api/v1/identity/verify
+2025-10-19 15:05:38,365 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:05:38,366 - IDA - INFO - ======================================================================
+2025-10-19 15:05:38,366 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:05:38,366 - IDA - INFO - ======================================================================
+2025-10-19 15:05:38,367 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:05:38,367 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:05:38,385 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 15:05:38,899 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 15:05:38,939 - IDA - INFO - Credentials extracted
+2025-10-19 15:05:38,939 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 15:05:38,962 - IDA - INFO - Role assigned
+2025-10-19 15:05:39,476 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:05:39,492 - IDA - ERROR - Verification failed: 401 Client Error: Unauthorized for url: http://localhost:8443/api/v1/identity/verify
+2025-10-19 15:14:00,459 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:14:00,460 - IDA - INFO - ======================================================================
+2025-10-19 15:14:00,461 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:14:00,461 - IDA - INFO - ======================================================================
+2025-10-19 15:14:00,461 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:14:00,462 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:14:00,491 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 15:14:00,993 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 15:14:01,035 - IDA - INFO - Credentials extracted
+2025-10-19 15:14:01,036 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 15:14:01,055 - IDA - INFO - Role assigned
+2025-10-19 15:14:01,564 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:14:01,581 - IDA - ERROR - Verification failed: 400 Client Error: Bad Request for url: http://localhost:8443/api/v1/identity/verify
+2025-10-19 15:14:16,332 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:14:16,332 - IDA - INFO - ======================================================================
+2025-10-19 15:14:16,332 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:14:16,332 - IDA - INFO - ======================================================================
+2025-10-19 15:14:16,333 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:14:16,333 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:14:16,350 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 15:14:16,858 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 15:14:16,893 - IDA - INFO - Credentials extracted
+2025-10-19 15:14:16,894 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 15:14:16,921 - IDA - INFO - Role assigned
+2025-10-19 15:14:17,436 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:14:17,440 - IDA - ERROR - Verification failed: 400 Client Error: Bad Request for url: http://localhost:8443/api/v1/identity/verify
+2025-10-19 15:15:47,408 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:15:47,409 - IDA - INFO - ======================================================================
+2025-10-19 15:15:47,409 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:15:47,409 - IDA - INFO - ======================================================================
+2025-10-19 15:15:47,409 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:15:47,410 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:15:47,433 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 15:15:47,945 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 15:15:47,979 - IDA - INFO - Credentials extracted
+2025-10-19 15:15:47,979 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 15:15:47,993 - IDA - INFO - Role assigned
+2025-10-19 15:15:48,506 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:15:48,511 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 15:15:48,511 - IDA - INFO - 
+======================================================================
+2025-10-19 15:15:48,512 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 15:15:48,512 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 15:15:48,512 - IDA - INFO - ======================================================================
+
+2025-10-19 15:18:21,934 - IDA - INFO - 
+Monitoring stopped by user
+2025-10-19 15:18:45,843 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:18:45,843 - IDA - INFO - ======================================================================
+2025-10-19 15:18:45,843 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:18:45,844 - IDA - INFO - ======================================================================
+2025-10-19 15:18:45,844 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:18:45,844 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:18:45,869 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 15:18:54,761 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:18:54,762 - IDA - INFO - ======================================================================
+2025-10-19 15:18:54,762 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:18:54,762 - IDA - INFO - ======================================================================
+2025-10-19 15:18:54,763 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:18:54,763 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:18:54,780 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 15:18:55,281 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 15:18:55,335 - IDA - INFO - Credentials extracted
+2025-10-19 15:18:55,336 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 15:18:55,341 - IDA - INFO - Role assigned
+2025-10-19 15:18:55,841 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:18:55,858 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 15:18:55,860 - IDA - INFO - 
+======================================================================
+2025-10-19 15:18:55,860 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 15:18:55,860 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 15:18:55,861 - IDA - INFO - ======================================================================
+
+2025-10-19 15:20:43,584 - IDA - INFO - 
+Monitoring stopped by user
+2025-10-19 15:20:50,017 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:20:50,018 - IDA - INFO - ======================================================================
+2025-10-19 15:20:50,018 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:20:50,018 - IDA - INFO - ======================================================================
+2025-10-19 15:20:50,019 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:20:50,019 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:20:50,024 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 15:20:50,528 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 15:20:50,565 - IDA - INFO - Credentials extracted
+2025-10-19 15:20:50,565 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 15:20:50,592 - IDA - INFO - Role assigned
+2025-10-19 15:20:51,103 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:20:51,119 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 15:20:51,121 - IDA - INFO - 
+======================================================================
+2025-10-19 15:20:51,121 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 15:20:51,121 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 15:20:51,121 - IDA - INFO - ======================================================================
+
+2025-10-19 15:20:51,150 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:20:56,134 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:01,138 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:06,153 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:11,173 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:16,162 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:21,188 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:26,197 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:31,210 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:36,221 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:41,232 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:46,231 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:51,250 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:21:56,259 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:01,263 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:06,263 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:11,282 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:16,286 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:21,286 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:26,298 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:31,287 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:36,306 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:41,307 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:46,319 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:51,319 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:22:56,319 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:01,313 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:06,333 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:11,345 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:16,348 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:21,351 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:26,337 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:31,356 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:36,365 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:41,370 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:46,381 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:51,383 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:23:56,382 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:01,406 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:06,415 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:11,427 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:16,430 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:21,439 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:26,451 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:31,462 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:36,465 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:41,467 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:46,476 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:51,478 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:24:56,488 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:01,503 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:06,509 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:11,513 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:16,513 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:21,505 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:26,532 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:31,541 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:36,537 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:41,552 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:46,567 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:51,571 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:25:56,584 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:01,593 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:06,605 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:11,611 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:16,622 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:21,627 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:26,638 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:31,641 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:36,652 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:41,660 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:46,672 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:51,661 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:26:56,687 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:01,700 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:06,712 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:11,725 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:16,717 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:21,731 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:26,726 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:31,741 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:36,756 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:41,758 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:46,773 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:51,765 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:27:56,782 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:01,794 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:06,801 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:11,818 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:16,814 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:21,839 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:26,844 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:31,836 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:36,861 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:41,860 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:46,873 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:51,879 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:28:56,887 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:01,900 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:06,911 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:11,917 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:16,911 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:21,924 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:26,929 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:31,920 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:36,948 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:41,950 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:46,952 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:51,964 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:29:56,973 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:01,964 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:06,980 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:11,980 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:16,993 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:22,002 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:27,009 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:32,016 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:37,030 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:39,761 - IDA - INFO - 
+Monitoring stopped by user
+2025-10-19 15:30:50,107 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 15:30:50,107 - IDA - INFO - ======================================================================
+2025-10-19 15:30:50,107 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 15:30:50,107 - IDA - INFO - ======================================================================
+2025-10-19 15:30:50,108 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 15:30:50,108 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 15:30:50,113 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 15:30:50,614 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 15:30:50,649 - IDA - INFO - Credentials extracted
+2025-10-19 15:30:50,649 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 15:30:50,676 - IDA - INFO - Role assigned
+2025-10-19 15:30:51,188 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 15:30:51,206 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 15:30:51,207 - IDA - INFO - 
+======================================================================
+2025-10-19 15:30:51,207 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 15:30:51,207 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 15:30:51,207 - IDA - INFO - ======================================================================
+
+2025-10-19 15:30:51,235 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:30:56,233 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:01,241 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:06,244 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:11,250 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:16,256 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:21,264 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:26,281 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:31,289 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:36,297 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:41,310 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:46,322 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:51,323 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:31:56,329 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:01,330 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:06,331 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:11,351 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:16,367 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:21,372 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:26,364 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:31,370 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:36,398 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:41,402 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:46,415 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:51,420 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:32:56,421 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:01,413 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:06,415 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:11,437 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:16,448 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:21,449 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:26,453 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:31,458 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:36,472 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:41,480 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:46,484 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:51,494 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:33:56,497 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:01,499 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:06,499 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:11,499 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:16,510 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:21,523 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:26,535 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:31,545 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:36,549 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:41,574 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:46,579 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:51,570 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:34:56,593 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:01,592 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:06,606 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:11,608 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:16,621 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:21,621 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:26,636 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:31,635 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:36,649 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:41,648 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:46,657 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:51,647 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:35:56,657 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:01,667 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:06,678 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:11,690 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:16,705 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:21,708 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:26,705 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:31,720 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:36,724 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:41,730 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:46,734 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:51,737 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:36:56,736 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:37:01,750 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:37:06,749 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 15:37:08,658 - IDA - INFO - 
+Monitoring stopped by user
