@@ -553,3 +553,799 @@ Monitoring stopped by user
 2025-10-19 15:37:06,749 - IDA - INFO - Threat Assessment: Score=0/100
 2025-10-19 15:37:08,658 - IDA - INFO - 
 Monitoring stopped by user
+2025-10-19 22:04:40,533 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 22:04:40,534 - IDA - INFO - ======================================================================
+2025-10-19 22:04:40,535 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 22:04:40,535 - IDA - INFO - ======================================================================
+2025-10-19 22:04:40,535 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 22:04:40,535 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 22:04:40,556 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 22:04:41,064 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 22:04:41,128 - IDA - INFO - Credentials extracted
+2025-10-19 22:04:41,129 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 22:04:41,149 - IDA - INFO - Role assigned
+2025-10-19 22:04:41,664 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 22:04:41,669 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 22:04:41,671 - IDA - INFO - 
+======================================================================
+2025-10-19 22:04:41,671 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 22:04:41,671 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 22:04:41,671 - IDA - INFO - ======================================================================
+
+2025-10-19 22:04:41,675 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:04:41,675 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:04:46,700 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:04:46,701 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:04:51,701 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:04:51,702 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:04:56,707 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:04:56,708 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:05:01,708 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:05:01,709 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:05:06,724 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:05:06,725 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:05:11,741 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:05:11,741 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:05:16,749 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:05:16,750 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:05:21,765 - IDA - ERROR - Error injecting test events: No module named 'analysis.test_mode'
+2025-10-19 22:05:21,766 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:05:26,043 - IDA - INFO - 
+Monitoring stopped by user
+2025-10-19 22:06:27,148 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 22:06:27,149 - IDA - INFO - ======================================================================
+2025-10-19 22:06:27,149 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 22:06:27,150 - IDA - INFO - ======================================================================
+2025-10-19 22:06:27,150 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 22:06:27,150 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 22:06:27,165 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 22:06:27,667 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 22:06:27,699 - IDA - INFO - Credentials extracted
+2025-10-19 22:06:27,699 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 22:06:27,703 - IDA - INFO - Role assigned
+2025-10-19 22:06:28,209 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 22:06:28,225 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 22:06:28,227 - IDA - INFO - 
+======================================================================
+2025-10-19 22:06:28,227 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 22:06:28,228 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 22:06:28,228 - IDA - INFO - ======================================================================
+
+2025-10-19 22:06:28,247 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:06:28,247 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:06:28,247 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:06:28,248 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:06:33,246 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:06:33,247 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:06:33,247 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:06:33,248 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:06:38,260 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:06:38,260 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:06:38,260 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:06:38,261 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:06:43,261 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:06:43,261 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:06:43,261 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:06:43,263 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:06:48,271 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:06:48,272 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:06:48,272 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:06:48,274 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:06:53,282 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:06:53,282 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:06:53,282 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:06:53,284 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:06:58,285 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:06:58,285 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:06:58,285 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:06:58,286 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:03,301 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:03,301 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:03,301 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:03,301 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:08,316 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:08,317 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:08,317 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:08,318 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:13,317 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:13,318 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:13,318 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:13,319 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:18,321 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:18,321 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:18,322 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:18,323 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:23,331 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:23,331 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:23,331 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:23,333 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:28,334 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:28,334 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:28,334 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:28,336 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:33,337 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:33,337 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:33,337 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:33,338 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:38,344 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:38,344 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:38,344 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:38,346 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:43,352 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:43,352 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:43,353 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:43,354 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:48,360 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:48,360 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:48,360 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:48,361 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:53,374 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:53,375 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:53,375 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:53,377 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:07:58,363 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:07:58,363 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:07:58,363 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:07:58,363 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:08:03,388 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:03,389 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:03,389 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:03,390 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:08:08,384 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:08,384 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:08,384 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:08,385 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:08:13,388 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:13,388 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:13,389 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:13,389 - IDA - INFO - Threat Assessment: Score=0/100
+2025-10-19 22:08:18,182 - IDA - INFO - 
+Monitoring stopped by user
+2025-10-19 22:08:27,110 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 22:08:27,110 - IDA - INFO - ======================================================================
+2025-10-19 22:08:27,114 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 22:08:27,114 - IDA - INFO - ======================================================================
+2025-10-19 22:08:27,115 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 22:08:27,115 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 22:08:27,133 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 22:08:27,638 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 22:08:27,671 - IDA - INFO - Credentials extracted
+2025-10-19 22:08:27,671 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 22:08:27,675 - IDA - INFO - Role assigned
+2025-10-19 22:08:28,180 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 22:08:28,197 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 22:08:28,198 - IDA - INFO - 
+======================================================================
+2025-10-19 22:08:28,198 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 22:08:28,199 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 22:08:28,200 - IDA - INFO - ======================================================================
+
+2025-10-19 22:08:28,242 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:28,242 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:28,242 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:28,244 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:08:33,228 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:33,228 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:33,228 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:33,230 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:08:38,232 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:38,232 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:38,232 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:38,232 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:08:43,238 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:43,238 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:43,238 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:43,239 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:08:48,241 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:48,242 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:48,242 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:48,243 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:08:53,248 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:53,249 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:53,249 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:53,249 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:08:58,256 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:08:58,256 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:08:58,257 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:08:58,258 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:03,252 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:03,252 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:03,252 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:03,254 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:08,272 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:08,272 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:08,273 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:08,273 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:13,268 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:13,269 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:13,269 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:13,270 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:18,286 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:18,286 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:18,287 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:18,287 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:23,310 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:23,310 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:23,311 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:23,311 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:28,318 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:28,318 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:28,319 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:28,319 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:33,322 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:33,322 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:33,322 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:33,324 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:38,331 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:38,331 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:38,332 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:38,332 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:43,336 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:43,337 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:43,337 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:43,338 - IDA - INFO - Threat Assessment: Score=1/100
+2025-10-19 22:09:44,453 - IDA - INFO - 
+Monitoring stopped by user
+2025-10-19 22:09:47,285 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 22:09:47,286 - IDA - INFO - ======================================================================
+2025-10-19 22:09:47,286 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 22:09:47,287 - IDA - INFO - ======================================================================
+2025-10-19 22:09:47,287 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 22:09:47,287 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 22:09:47,291 - IDA - ERROR - Registration failed: 409 Client Error: Conflict for url: http://localhost:8443/api/v1/identity/register
+2025-10-19 22:09:58,000 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 22:09:58,000 - IDA - INFO - ======================================================================
+2025-10-19 22:09:58,000 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 22:09:58,000 - IDA - INFO - ======================================================================
+2025-10-19 22:09:58,000 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 22:09:58,000 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 22:09:58,015 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 22:09:58,532 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 22:09:58,565 - IDA - INFO - Credentials extracted
+2025-10-19 22:09:58,566 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 22:09:58,582 - IDA - INFO - Role assigned
+2025-10-19 22:09:59,087 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 22:09:59,101 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 22:09:59,103 - IDA - INFO - 
+======================================================================
+2025-10-19 22:09:59,104 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 22:09:59,104 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 22:09:59,104 - IDA - INFO - ======================================================================
+
+2025-10-19 22:09:59,123 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:09:59,123 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:09:59,123 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:09:59,128 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:04,114 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:04,114 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:04,115 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:04,116 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:09,145 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:09,145 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:09,145 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:09,146 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:14,137 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:14,138 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:14,138 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:14,139 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:19,138 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:19,138 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:19,138 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:19,140 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:24,146 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:24,146 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:24,146 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:24,148 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:29,161 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:29,161 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:29,162 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:29,162 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:34,143 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:34,143 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:34,144 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:34,145 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:39,168 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:39,168 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:39,169 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:39,169 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:44,169 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:44,169 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:44,169 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:44,171 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:49,169 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:49,169 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:49,169 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:49,171 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:54,173 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:54,173 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:54,173 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:54,174 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:10:59,183 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:10:59,183 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:10:59,183 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:10:59,184 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:11:04,198 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:04,199 - IDA - INFO - Injected 8 mock events (brute_force)
+2025-10-19 22:11:04,199 - IDA - INFO - Total events for analysis: 9 (real: 1, mock: 8)
+2025-10-19 22:11:04,200 - IDA - INFO - Threat Assessment: Score=13/100
+2025-10-19 22:11:08,914 - IDA - INFO - 
+Monitoring stopped by user
+2025-10-19 22:11:12,094 - IDA - INFO - [OK] Bedrock initialized successfully
+2025-10-19 22:11:12,095 - IDA - INFO - ======================================================================
+2025-10-19 22:11:12,095 - IDA - INFO - Intrusion Detection Agent Initialized
+2025-10-19 22:11:12,095 - IDA - INFO - ======================================================================
+2025-10-19 22:11:12,096 - IDA - INFO - 
+[intrusion-detection-agent-001] Setting up IDA agent...
+
+2025-10-19 22:11:12,097 - IDA - INFO - Registering with Go Wrapper (http://localhost:8443)...
+2025-10-19 22:11:12,114 - IDA - INFO - Registered with Go Wrapper
+2025-10-19 22:11:12,628 - IDA - INFO - Extracting credentials from wrapper...
+2025-10-19 22:11:12,666 - IDA - INFO - Credentials extracted
+2025-10-19 22:11:12,666 - IDA - INFO - Assigning role 'service' to IDA...
+2025-10-19 22:11:12,687 - IDA - INFO - Role assigned
+2025-10-19 22:11:13,200 - IDA - INFO - Verifying identity with Go Wrapper...
+2025-10-19 22:11:13,217 - IDA - INFO - Identity verified with Go Wrapper
+
+2025-10-19 22:11:13,219 - IDA - INFO - 
+======================================================================
+2025-10-19 22:11:13,219 - IDA - INFO - IDA Starting Continuous Monitoring
+2025-10-19 22:11:13,219 - IDA - INFO - Monitoring interval: 5s
+2025-10-19 22:11:13,219 - IDA - INFO - ======================================================================
+
+2025-10-19 22:11:13,253 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:13,253 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:13,253 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:13,255 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:13,255 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:13,255 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:13,255 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:17,646 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:17,647 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:17,647 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:17,647 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:17,648 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:17,648 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:17,649 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:17,649 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:17,669 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:17,689 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:17,704 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:17,722 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:18,246 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:18,246 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:18,247 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:18,248 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:18,248 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:18,248 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:18,248 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:21,681 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:21,682 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:21,682 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:21,682 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:21,682 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:21,682 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:21,682 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:21,684 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:21,688 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:21,692 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:21,707 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:21,724 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:23,257 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:23,257 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:23,257 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:23,259 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:23,259 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:23,259 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:23,259 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:26,478 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:26,478 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:26,478 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:26,478 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:26,478 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:26,479 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:26,479 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:26,479 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:26,511 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:26,528 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:26,534 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:26,539 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:28,247 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:28,247 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:28,247 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:28,247 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:28,247 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:28,247 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:28,247 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:31,962 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:31,962 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:31,962 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:31,962 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:31,962 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:31,964 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:31,964 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:31,964 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:31,982 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:32,006 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:32,027 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:32,056 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:33,267 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:33,268 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:33,268 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:33,269 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:33,269 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:33,270 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:33,270 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:37,380 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:37,380 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:37,381 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:37,381 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:37,381 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:37,381 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:37,381 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:37,382 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:37,401 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:37,422 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:37,445 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:37,449 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:38,282 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:38,282 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:38,282 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:38,284 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:38,284 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:38,284 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:38,284 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:42,546 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:42,547 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:42,547 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:42,550 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:42,551 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:42,552 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:42,556 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:42,557 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:42,569 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:42,578 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:42,588 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:42,598 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:43,294 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:43,294 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:43,294 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:43,296 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:43,296 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:43,297 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:43,297 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:47,203 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:47,203 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:47,204 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:47,204 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:47,204 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:47,205 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:47,205 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:47,206 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:47,211 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:47,240 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:47,245 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:47,270 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:48,287 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:48,287 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:48,287 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:48,289 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:48,289 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:48,289 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:48,289 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:52,423 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:52,424 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:52,425 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:52,425 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:52,425 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:52,425 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:52,425 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:52,426 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:52,435 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:52,440 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:52,446 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:52,451 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:53,317 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:53,317 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:53,317 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:53,318 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:53,318 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:53,319 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:53,319 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:11:56,824 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:11:56,824 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:56,824 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:11:56,824 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:56,824 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:11:56,824 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:11:56,824 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:11:56,824 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:11:56,831 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:56,854 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:56,869 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:56,892 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:11:58,306 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:11:58,307 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:11:58,307 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:11:58,308 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:11:58,308 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:11:58,309 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:11:58,309 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:12:06,152 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:12:06,153 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:06,154 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:12:06,154 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:06,154 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:06,154 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:12:06,154 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:06,154 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:12:06,177 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:06,194 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:06,218 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:06,243 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:06,246 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:12:06,247 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:12:06,247 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:12:06,248 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:12:06,248 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:12:06,249 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:12:06,249 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:12:13,484 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:12:13,484 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:13,484 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:12:13,484 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:13,484 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:13,484 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:12:13,484 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:13,490 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:12:13,511 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:13,515 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:13,520 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:13,525 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:13,538 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:12:13,539 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:12:13,539 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:12:13,540 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:12:13,540 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:12:13,540 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:12:13,540 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:12:20,888 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:12:20,888 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:20,888 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:12:20,888 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:20,888 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:20,888 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:12:20,893 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:20,893 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:12:20,925 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:20,944 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:20,961 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:20,977 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:20,991 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:12:20,991 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:12:20,991 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:12:20,991 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:12:20,993 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:12:20,993 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:12:20,993 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:12:31,012 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:12:31,012 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:31,012 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:12:31,012 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:31,012 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:31,016 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:12:31,016 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:31,017 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:12:31,037 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:31,041 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:31,046 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:31,064 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:31,078 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:12:31,078 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:12:31,079 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:12:31,080 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:12:31,080 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:12:31,080 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:12:31,080 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:12:42,464 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:12:42,464 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:42,464 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:12:42,464 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:42,464 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:42,464 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:12:42,464 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:42,464 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:12:42,486 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:42,505 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:42,510 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:42,526 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:42,541 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:12:42,541 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:12:42,541 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:12:42,542 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:12:42,543 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:12:42,543 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:12:42,543 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:12:51,138 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:12:51,138 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:51,139 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:12:51,139 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:51,140 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:12:51,140 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:12:51,140 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:12:51,141 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:12:51,148 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:51,171 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:51,194 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:51,212 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:12:51,227 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:12:51,227 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:12:51,227 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:12:51,228 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:12:51,228 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:12:51,229 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:12:51,229 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:13:03,643 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:13:03,644 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:13:03,644 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:13:03,644 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:13:03,644 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:13:03,644 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:13:03,644 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:13:03,644 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:13:03,664 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:03,678 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:03,696 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:03,711 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:03,733 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:13:03,733 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:13:03,733 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:13:03,734 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:13:03,734 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:13:03,735 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:13:03,735 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:13:11,362 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:13:11,362 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:13:11,362 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:13:11,362 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:13:11,362 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:13:11,362 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:13:11,362 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:13:11,366 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:13:11,374 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:11,396 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:11,419 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:11,423 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:11,443 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:13:11,444 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:13:11,444 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:13:11,445 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:13:11,445 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:13:11,445 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:13:11,445 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:13:21,370 - IDA - ERROR - Failed to parse Bedrock response: expected string or bytes-like object
+2025-10-19 22:13:21,370 - IDA - WARNING - Bedrock Classification: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:13:21,370 - IDA - WARNING - Confidence: 70%
+2025-10-19 22:13:21,370 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:13:21,375 - IDA - WARNING - 
+Executing Response: MEDIUM THREAT - Suspicious Activity
+2025-10-19 22:13:21,376 - IDA - WARNING - Urgency: MEDIUM
+2025-10-19 22:13:21,376 - IDA - WARNING - Recommendations: ['MONITOR_CLOSELY', 'RATE_LIMIT_OPERATOR', 'REQUIRE_MFA', 'LOG_EVENT']
+
+2025-10-19 22:13:21,376 - IDA - WARNING - MEDIUM THREAT - Executing precautions
+2025-10-19 22:13:21,398 - IDA - ERROR - Failed to execute action 'log_security_event': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:21,420 - IDA - ERROR - Failed to execute action 'enable_monitoring': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:21,435 - IDA - ERROR - Failed to execute action 'rate_limit_operator': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:21,457 - IDA - ERROR - Failed to execute action 'require_mfa': 500 Server Error: Internal Server Error for url: http://localhost:8443/api/v1/sdk/execute
+2025-10-19 22:13:21,472 - IDA - INFO - TEST MODE ENABLED - Injecting 'brute_force' scenario
+2025-10-19 22:13:21,472 - IDA - INFO - Injected 30 mock events (brute_force)
+2025-10-19 22:13:21,472 - IDA - INFO - Total events for analysis: 31 (real: 1, mock: 30)
+2025-10-19 22:13:21,473 - IDA - INFO - Threat Assessment: Score=55/100
+2025-10-19 22:13:21,473 - IDA - WARNING - 
+======================================================================
+2025-10-19 22:13:21,474 - IDA - WARNING - THREAT DETECTED - Score: 55/100
+2025-10-19 22:13:21,474 - IDA - WARNING - ======================================================================
+
+2025-10-19 22:13:33,368 - IDA - INFO - 
+Monitoring stopped by user

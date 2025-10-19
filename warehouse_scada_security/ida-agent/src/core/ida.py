@@ -244,14 +244,22 @@ class IntrusionDetectionAgent:
         ]
 
     def _fetch_audit_logs(self) -> list:
-        """Fetch audit logs from Go Wrapper with correct X-Agent-ID header"""
+        """
+        Fetch audit logs from Go Wrapper
+        Optionally inject mock events for testing via TEST_MODE environment variable
+        """
+        
+        # Check if test mode is enabled
+        test_mode = os.getenv("IDA_TEST_MODE", "false").lower() == "true"
+        test_scenario = os.getenv("IDA_TEST_SCENARIO", "brute_force")
+        
+        # Fetch real events from wrapper
+        real_events = []
         try:
-            # Create signature for audit log request
             message = f"{self.agent_name}:audit_read".encode()
             signature = self.private_key.sign(message)
             signature_hex = signature.hex()
             
-            # FIXED: Use X-Agent-ID header (not X-Operator-ID)
             headers = {
                 "X-Agent-ID": self.agent_name,
                 "X-Signature": signature_hex,
@@ -263,15 +271,37 @@ class IntrusionDetectionAgent:
             response.raise_for_status()
             
             data = response.json()
-            events = data.get("events", [])
+            real_events = data.get("events", [])
             
-            self.logger.debug(f"Fetched {len(events)} audit events")
-            return events
-            
+            self.logger.debug(f"Fetched {len(real_events)} real audit events from wrapper")
         except Exception as e:
-            self.logger.debug(f"Error fetching audit logs: {e}")
-            return []
-
+            self.logger.debug(f"Error fetching audit logs from wrapper: {e}")
+            # Continue - we'll use test events if available
+        
+        # If test mode enabled, inject mock events
+        if test_mode:
+            try:
+                from core.test_mode import get_test_scenario, inject_test_events
+                
+                self.logger.info(f"TEST MODE ENABLED - Injecting '{test_scenario}' scenario")
+                
+                # Get mock events for scenario
+                mock_events = get_test_scenario(test_scenario)
+                
+                # Combine with real events
+                all_events = inject_test_events(real_events, test_scenario)
+                
+                self.logger.info(f"Injected {len(mock_events)} mock events ({test_scenario})")
+                self.logger.info(f"Total events for analysis: {len(all_events)} (real: {len(real_events)}, mock: {len(mock_events)})")
+                
+                return all_events
+            
+            except Exception as e:
+                self.logger.error(f"Error injecting test events: {e}")
+                return real_events
+        
+        # Normal mode - return only real events
+        return real_events
 
     def _handle_threat(self, threat_score: int, threat_data: Dict, audit_logs: list):
         self.logger.warning(f"\n{'='*70}")

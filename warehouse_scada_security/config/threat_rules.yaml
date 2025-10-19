@@ -1,0 +1,159 @@
+# Intrusion Detection Agent - Threat Rules and Policies
+# Defines thresholds and patterns for threat detection
+
+threat_patterns:
+  # Brute Force Attack Pattern
+  brute_force:
+    description: "Multiple failed login attempts from same/different IPs"
+    indicators:
+      failed_logins_per_hour: 5
+      failed_logins_in_5min: 3
+      threat_score_threshold: 50
+    actions:
+      - lock_account
+      - alert_admin
+    severity: HIGH
+
+  # Credential Stuffing Pattern
+  credential_stuffing:
+    description: "Multiple operator IDs attempted from single IP"
+    indicators:
+      unique_operators_per_ip: 3
+      time_window_seconds: 60
+      threat_score_threshold: 65
+    actions:
+      - block_ip
+      - lock_all_related_accounts
+      - alert_security
+    severity: HIGH
+
+  # DoS/Rate Abuse Pattern
+  dos_attack:
+    description: "Excessive requests from single agent in short time"
+    indicators:
+      requests_per_minute: 50
+      time_window_seconds: 60
+      threat_score_threshold: 75
+    actions:
+      - rate_limit_agent
+      - isolate_device
+      - alert_admin
+    severity: CRITICAL
+
+  # Privilege Escalation Pattern
+  privilege_escalation:
+    description: "Agent attempting unauthorized actions for its role"
+    indicators:
+      denied_actions_in_5min: 3
+      admin_commands_from_viewer: true
+      threat_score_threshold: 70
+    actions:
+      - revoke_permissions
+      - lock_account
+      - alert_security
+    severity: HIGH
+
+  # Anomalous Behavior Pattern
+  anomalous_behavior:
+    description: "Unusual activity pattern detected"
+    indicators:
+      deviation_from_baseline: 0.8  # 80% deviation
+      command_type_shift_threshold: 0.9  # 90% shift from read to write
+      threat_score_threshold: 60
+    actions:
+      - enable_monitoring
+      - require_mfa
+      - alert_admin
+    severity: MEDIUM
+
+  # Impossible Travel Pattern
+  impossible_travel:
+    description: "Login from geographically impossible locations"
+    indicators:
+      ip_distance_km: 1000
+      time_between_logins_minutes: 5
+      threat_score_threshold: 80
+    actions:
+      - lock_account
+      - revoke_sessions
+      - alert_security
+    severity: CRITICAL
+
+# Response Actions by Threat Level
+response_actions:
+  LOW:
+    description: "Monitor and log"
+    actions:
+      - log_event
+      - monitor
+    notify: false
+
+  MEDIUM:
+    description: "Alert and restrict"
+    actions:
+      - log_event
+      - enable_monitoring
+      - require_mfa
+      - alert_admin
+    notify: true
+
+  HIGH:
+    description: "Restrict and investigate"
+    actions:
+      - log_event
+      - lock_account
+      - revoke_sessions
+      - alert_security
+      - enable_full_monitoring
+    notify: true
+    escalate: true
+
+  CRITICAL:
+    description: "Immediate containment"
+    actions:
+      - log_event
+      - lock_account
+      - isolate_device
+      - emergency_shutdown
+      - alert_security
+      - alert_admin
+      - preserve_logs
+    notify: true
+    escalate: true
+    incident_response: true
+
+# Detection Sensitivity
+sensitivity:
+  high: 0.7    # Detect 70% anomalies (quick reaction, more false positives)
+  medium: 0.8  # Detect 80% anomalies (balanced)
+  low: 0.9     # Detect 90% anomalies (conservative, fewer false positives)
+  
+# Currently configured sensitivity
+current_sensitivity: medium
+
+# Baseline Behavior (for anomaly detection)
+baseline:
+  normal_commands_per_minute: 2
+  normal_read_write_ratio: 0.8  # 80% read, 20% write
+  normal_devices_per_hour: 3
+  normal_failed_logins_per_day: 0
+  normal_permission_denied_per_hour: 0
+
+# Time windows for detection
+time_windows:
+  immediate: 60          # 1 minute
+  short_term: 300        # 5 minutes
+  medium_term: 3600      # 1 hour
+  long_term: 86400       # 24 hours
+
+# Alert Configuration
+alerts:
+  admin_email: "admin@warehouse.local"
+  security_team_email: "security@warehouse.local"
+  slack_webhook: null  # Set if using Slack
+  pagerduty_key: null  # Set if using PagerDuty
+  
+  # Alert thresholds
+  send_alert_on_score: 50
+  escalate_on_score: 80
+  incident_on_score: 90
