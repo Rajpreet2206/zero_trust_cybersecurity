@@ -285,6 +285,18 @@ const SeerVaultDiagram = () => {
           </div>
         </div>
       </div>
+      <p></p>
+          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+            <div style={{ display: 'inline-block', background: 'linear-gradient(to right, #072130ff, #059669)', borderRadius: '8px', padding: '15px 30px', border: '2px solid #06b6d4' }}>
+              <p style={{ color: 'white', fontWeight: 'bold', fontSize: '18px', margin: '0' }}>Submitted By: </p>
+              <p style={{ color: '#cffafe', fontSize: '14px', marginTop: '4px', margin: '0' }}>
+                    Vidhi Kothari and Rajpreet Singh 
+              </p>
+              <p style={{ color: '#171124ff', fontSize: '14px', marginTop: '4px', margin: '0' }}>
+                    (Pace University and TU Munich) 
+              </p>
+            </div>
+          </div>
     </div>
   );
 };
