@@ -4,6 +4,8 @@
 
 The Strands Zero-Trust Security Wrapper is an enterprise-grade security extension that implements comprehensive zero-trust architecture principles for the Strands Agents SDK. This wrapper provides defense-in-depth security controls including cryptographic identity verification, fine-grained authorization, end-to-end encryption, continuous behavioral monitoring, and immutable audit logging.
 
+![SeerSecure](zt_ot.png)
+
 ## Business Value
 
 Modern distributed agent systems face significant security challenges including unauthorized access, data exfiltration, privilege escalation, and compromised credentials. Traditional perimeter-based security models fail to address threats from internal actors or compromised agents operating within the trusted network boundary.
