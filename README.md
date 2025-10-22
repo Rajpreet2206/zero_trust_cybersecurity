@@ -6,6 +6,21 @@ The Strands Zero-Trust Security Wrapper is an enterprise-grade security extensio
 #### [Visit Website](https://zero-trust-cybersecurity-g3hz.vercel.app/)
 ![SeerSecure](zt_ot.png)
 
+## GoLang Wrapper + Mock SDK Flask Server
+The WrappedStrandsAgent is the frontline autonomous agent that talks securely through the Zero-Trust Wrapper, rather than directly hitting any AI model or API. The Flask service is the final executor that receives tasks from the Zero-Trust Wrapper, runs them on Bedrock, and returns the result. 
+
+![Mock_SDK_Flask_Server](mock_flask_sdk.png)
+
+## Architecture Overview
+- The GoLang Wrapper sits between Python Strands agents and the SCADA system, ensuring zero-trust verification for every request.
+- The IDA Agent continuously monitors and detects suspicious activity, reasoning with AI through AWS Bedrock.
+- pfSense ensures network-level segmentation while Docker Compose orchestrates all services with secure connectivity and persistent logging
+
+
+
+![System_Architecture or Components](System_Architecture.png)
+
+
 ## Business Value
 
 Modern distributed agent systems face significant security challenges including unauthorized access, data exfiltration, privilege escalation, and compromised credentials. Traditional perimeter-based security models fail to address threats from internal actors or compromised agents operating within the trusted network boundary.

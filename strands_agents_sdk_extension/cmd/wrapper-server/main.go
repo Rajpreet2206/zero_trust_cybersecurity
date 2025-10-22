@@ -93,10 +93,10 @@ func main() {
 		keyFile := os.Getenv("TLS_KEY_PATH")
 
 		if certFile == "" {
-			certFile = "certs/server.crt"
+			certFile = "scripts/certs/server.crt"
 		}
 		if keyFile == "" {
-			keyFile = "certs/server.key"
+			keyFile = "scripts/certs/server.key"
 		}
 
 		// Check if cert files exist
@@ -110,7 +110,7 @@ func main() {
 		fmt.Printf("🔒 HTTPS (TLS) enabled\n")
 		fmt.Printf("📝 Certificate: %s\n", certFile)
 		fmt.Printf("📝 Key: %s\n", keyFile)
-		fmt.Printf("✓ HTTP server starting on :8443 (encrypted)\n")
+		fmt.Printf("✓ HTTPS server starting on :8443 (encrypted)\n")
 		serverErr = http.ListenAndServeTLS(":"+addr, certFile, keyFile, nil)
 	} else {
 		// HTTP mode (no TLS)
