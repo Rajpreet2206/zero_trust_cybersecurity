@@ -71,9 +71,6 @@ The behavioral analysis layer monitors agent operations and detects anomalous pa
 
 The orchestration layer coordinates security components and manages their interactions. Configuration management ensures consistent policy application across distributed enforcement points. Health monitoring detects component failures and triggers recovery procedures.
 
-## Technology Stack
-The Zero Trust Cybersecurity Wrapper project leverages a modern, multi-language technology stack optimized for secure, high-performance, and modular system design. The core implementation is written in Go, chosen for its strong concurrency model, efficient networking capabilities, and seamless integration with mTLS (Mutual TLS) for enforcing cryptographic identity verification between services. Open Policy Agent (OPA) is used as the policy enforcement engine, enabling fine-grained access control and dynamic decision-making based on contextual rules. The project also includes Python extensions that integrate with the Strands Agents SDK, allowing intelligent agent-based reasoning, security orchestration, and automation within the Zero Trust framework. Logging and observability are powered by Uber’s Zap for structured logging, while the system is designed to integrate easily with containerized environments such as Docker and Kubernetes for deployment. Together, this stack enables a secure, scalable, and intelligent infrastructure for implementing Zero Trust principles in distributed agent-based systems.
-
 ## Usage Examples
 
 ### Wrapping a Strands Agent
@@ -87,12 +84,6 @@ The wrapper emits structured security events for monitoring and alerting. Subscr
 
 ### Handling Security Incidents
 When the behavioral analysis engine detects anomalous activity, it generates security alerts with risk scores and supporting evidence. Security teams review alerts through the administrative interface which provides detailed visibility into agent behavior, access patterns, and policy evaluations. Incident response procedures leverage the wrapper's capabilities for credential revocation, agent isolation, and forensic investigation using immutable audit logs.
-
-## Testing
-
-The project maintains comprehensive test coverage across multiple testing dimensions. Unit tests verify individual components function correctly in isolation with proper error handling and edge case management. Integration tests validate that components work correctly together with realistic data flows. Security tests attempt to violate security properties and verify that defenses hold against attack scenarios. Performance tests measure overhead introduced by security controls and ensure acceptable latency characteristics.
-
-Execute the complete test suite using `npm test` which runs all test categories and generates coverage reports. Run specific test categories with `npm run test:unit`, `npm run test:integration`, or `npm run test:security`. Continuous integration pipelines automatically execute tests on every commit with failures blocking merge to main branches.
 
 ## Security Considerations
 
